@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./font/Norse-Bold.otf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    font-family: Norse-Bold;
+
+}
+
+img{
+    width: 650px;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    min-width: 60vw;
+    min-height: 100%;
+}
+img{
+    width: 700px;
+ 
+}
+
+
+.header{
+    padding: 30px;
+    font-size: 50px;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 2px 8px 0px rgba(47, 47, 47, 0.5);
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+.text{
+    font-size: 30px;
+}
+
+.text-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+
+
+input{
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.right1{
+    margin-left: 50px;
+}
+
+.container{
+    display: flex;
+}
+
+button{
+    position: relative;
+    top:100px;
+    background-color: #596D48;
+    color:white;
+    height: 40px;
+    width: 230px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px #596D48;
+
+
+}
+
+.logo{
+    display: flex;
+    position: absolute;
+    top: 150px;
+    height: 165px;
+    width: 700px;
+    background-color: black;
+    opacity: 0.5;
+    justify-content: center;
+
+}
+.odin{
+    font-size: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+p{
+    margin-top: 30px;
+}
+
+.log{
+    box-sizing: border-box;
+    width: min(150px, 100%);
+    
+}
+.footer{
+    display: flex;
+    margin-top: 80px;
+    padding: 30px;
+    font-size: 22px;
+    flex-grow: 1;
+
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
+}
+
+.text-form > input:focus {
+    outline: none; /* Removes the default outline */
+    border: 1px solid #E5E7EB; /* Adds a blue border */
+    box-shadow: 0 0 5px blue; /* Adds a subtle blue box-shadow */
+
+}
+
+.text-form > input[type='password']:invalid:focus{
+    border: 1px solid red;
+    box-shadow: 0 0 5px red;
+}
+
+.title{
+    font-size: 15px;
+    color: red;
+}
